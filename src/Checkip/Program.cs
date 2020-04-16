@@ -14,8 +14,6 @@ namespace NXHub.Checkip
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseKestrel(o => o.ListenAnyIP(5000));
-
                     webBuilder.UseStartup<Startup>();
                 });
     }
